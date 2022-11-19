@@ -1,4 +1,7 @@
-package org.faf;
+import ClassicCiphers.AffineCipher;
+import ClassicCiphers.CaesarCipher;
+import ClassicCiphers.PlayfairCipher;
+import ClassicCiphers.VigenereCipher;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.faf;
+package ClassicCiphers;
 
 public class VigenereCipher {
     private static final char[][] cipherArray = new char[26][26];

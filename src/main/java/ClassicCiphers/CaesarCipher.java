@@ -1,4 +1,4 @@
-package org.faf;
+package ClassicCiphers;
 
 public class CaesarCipher {
 
