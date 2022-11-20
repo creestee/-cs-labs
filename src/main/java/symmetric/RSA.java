@@ -26,11 +26,11 @@ public class RSA {
         d = e.modInverse(phi);
     }
 
-    public BigInteger getE() {
+    public BigInteger getPublicKey() {
         return e;
     }
 
-    public BigInteger getD() {
+    public BigInteger getPrivateKey() {
         return d;
     }
 
