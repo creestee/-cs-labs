@@ -1,6 +1,7 @@
 package hash.db;
 
 import hash.entity.UserCredentials;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -13,7 +14,7 @@ public class AppDb {
         java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
 
         UserCredentials user2 = new UserCredentials("User2", "test124");
-        UserCredentials user1 = new UserCredentials("User", "test123");
+        UserCredentials user1 = new UserCredentials("User", DigestUtils.sha256Hex("test123"));
 
         Transaction transaction = null;
 
