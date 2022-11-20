@@ -1,7 +1,7 @@
 package hash;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import symmetric.RSA;
+import assymetric.RSA;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +18,13 @@ public class DigitalSignature {
     }
 
     public boolean verifySignature(String message, Map<String, String> map) {
-        String hashedMessage = DigestUtils.sha256Hex(message);
-        String hashedMessageAfterDecryption = rsa.decrypt(map.get(message));
-        return hashedMessage.equals(hashedMessageAfterDecryption);
+        try {
+            String hashedMessage = DigestUtils.sha256Hex(message);
+            String hashedMessageAfterDecryption = rsa.decrypt(map.get(message));
+            return hashedMessage.equals(hashedMessageAfterDecryption);
+        }
+        catch (Exception e) {
+            return false;
+        }
     }
 }

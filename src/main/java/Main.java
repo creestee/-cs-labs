@@ -5,7 +5,7 @@ import hash.DigitalSignature;
 import hash.db.AppDb;
 import hash.entity.UserCredentials;
 import org.apache.commons.codec.digest.DigestUtils;
-import symmetric.RSA;
+import assymetric.RSA;
 
 import java.util.Map;
 

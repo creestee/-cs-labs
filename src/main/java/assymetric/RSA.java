@@ -1,4 +1,4 @@
-package symmetric;
+package assymetric;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

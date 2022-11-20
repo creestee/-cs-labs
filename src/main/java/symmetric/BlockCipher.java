@@ -1,4 +1,4 @@
-package assymetric;
+package symmetric;
 
 import java.util.Arrays;
 
