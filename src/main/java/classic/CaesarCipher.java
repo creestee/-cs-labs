@@ -1,4 +1,4 @@
-package ClassicCiphers;
+package classic;
 
 public class CaesarCipher {
 

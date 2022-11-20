@@ -1,4 +1,4 @@
-package AssymetricCiphers;
+package assymetric;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package ClassicCiphers;
+package classic;
 
 public class VigenereCipher {
     private static final char[][] cipherArray = new char[26][26];
